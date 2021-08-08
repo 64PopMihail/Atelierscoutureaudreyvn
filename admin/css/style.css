@@ -1,0 +1,81 @@
+/* .sidebar-brand-icon,.sidebar-brand-text{
+background: -webkit-linear-gradient(90deg, #EC008C 0%, #FC6767 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: linear-gradient(90deg, #ED213A 0%, #93291E 100%);
+}
+.nav-link:focus{
+    background: -webkit-linear-gradient(90deg, #EC008C 0%, #FC6767 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+.nav-link:hover{
+    background: -webkit-linear-gradient(90deg, #EC008C 0%, #FC6767 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+} */
+.avatar{
+  width: 45px;
+}
+.select2-selection {
+  border-radius: 50 px !important;
+}
+.upload{
+  display: flex;
+  flex-direction: column;
+}
+input[type=file]::-webkit-file-upload-button{
+  padding: 0 10px;
+  height: 30px;
+  border: solid 2px #484A54;
+  border-radius: 50px;
+  background-color: #484A54;
+  color: white;
+  margin-right: 20px;
+  transition: all 0.2s linear ;
+  
+}input[type=file]::-webkit-file-upload-button:hover{
+  background-color: white;
+  color: black;
+  
+}
+input[type=file]::-webkit-file-upload-button:focus{
+  outline: none;
+  
+}
+.browse:focus{
+  outline: none;
+}
+
+.ck-editor__main div{
+  height: 300px;
+}
+
+.img_utilisateur img{
+  width: 200px;
+
+}
+.select2-selection__choice{
+  background-color: #484A54 !important;
+  color: white;
+}
+.select2-selection--multiple{
+  border-radius: 50px !important;
+  height: 50px !important;
+  width: 100%;
+}
+#select2-role-container{
+  margin: 20px 0 0 15px;
+}
+.miniature{
+  width: 150px;
+}
+#reponse,#message{
+  height: 300px;
+  resize: none; 
+}
+.image{
+  width: 100%;
+  height: auto;
+}

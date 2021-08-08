@@ -1,0 +1,533 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px ;
+    background-color: #CA8A7C;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: space-around; */
+    /* height: auto; */
+    min-height: 100vh;
+
+}
+header{
+    position : sticky;
+    top: 0px;
+    z-index: 400;
+}
+a{
+    text-decoration: none; 
+}
+.logo{
+    margin-left: 15px;
+}
+.logo a{
+    font-family: 'Nothing You Could Do', cursive, sans-serif;
+    color: #FED9D1;
+    font-size: 1.5rem;
+    /* transition: all 0.5s ease-out; */
+}
+nav{
+    height: 10vh; 
+    background-color: black;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.nav-links{
+    display: flex;
+    width: 70%; 
+    height: 100%; 
+    justify-content: space-around; 
+    align-items: center; 
+    
+}
+.contenu{
+    width: 1140px; 
+    display: flex; 
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    padding: 8px; 
+}
+.nav-links li a{
+    color: #FED9D1;
+    font-size: 16px;
+    transition: color 0.4s ease-out;
+}
+
+.macard{
+    height: 342px;
+    width: 30%;
+    border-radius: 15px;
+    background-color: #F4EAEB;
+    margin: 16px;
+}
+
+a:hover{
+    text-decoration: none;
+}
+.nav-links li a:hover{
+    color: #E85353;
+    
+}
+.prez{
+    margin: 16px 0;
+    padding: 8px 40px 8px 8px;
+}
+.prez p{
+    color: #FED9D1;
+    margin: 8px 0 0 32px;
+    font-size: 16px;
+    /* text-align: justify; */
+}
+h1{
+    font-size: 24px;
+    margin-left: 16px;
+    margin-bottom: 8px;
+}
+.card-title{
+    color: black !important;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* L'élément qui contient mes 3 cartes sur la page d'accueil - au format ordinateur */
+
+
+.macard-title{
+    background-color: #E85353;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.macard-title span{
+    color :#FED9D1;
+    font-size: 16px;
+}
+.macard-body{
+    height: 292px;
+    padding: 16px;
+    overflow-y: hidden;
+    
+}
+.inner{
+    height: 292px;
+    width: 100%;
+    overflow-y: scroll;
+    padding-bottom: 32px;
+    display: flex;
+    flex-flow: row wrap;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    /* align-items: center; */
+}
+.miniVignette{
+    color: #FED9D1;
+    background-color: #E85353;
+    width: 45%;
+    height: 80px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 8px;
+    margin-bottom: 8px;
+
+}
+.miniVignette span{
+    font-size: 0.8rem;
+
+}
+
+.inner::-webkit-scrollbar {
+    width: 5px ;
+    border-radius: 50px;
+  }
+   
+/* .inner::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  } */
+   
+.inner::-webkit-scrollbar-thumb {
+    background-color: #E85353;
+    border-radius: 50px;
+  }
+.vignette{
+    width: 90%;
+    height: 150px;
+    border-radius: 15px;
+    margin-bottom: 16px;
+}
+.vignette img{
+    /* z-index: 1; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    
+}
+.article-description{
+    position: relative;
+    top: -150px;
+    left: 0;
+    z-index: 200;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #E85353 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.article-description span{
+    color: #FED9D1;
+    margin: 0 0 8px 8px;
+}
+aside{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 16px 0;
+}
+.iconify{
+    margin: 0 8px;
+    color: black;
+    transition : color 0.2s ease-out;
+}
+.iconify:hover{
+    color:#FED9D1;
+    
+}
+
+footer{
+    height: 50px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer a{
+    color : #FED9D1;
+    font-size: 0.8rem;
+}
+.sliderSlick{
+    height: 250px;
+    width: 100%;
+}
+.sliderElement img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+section{
+    width: 100%;
+}
+/* LOOOOOOOOOOGGGGGGGGGGGINNNNNNNNNNNNNNNNN . PHP */
+.log{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.log_img{
+    width: 50%;
+    min-height: 570px;
+    background-image: url('../img/pexels-evie-shaffer-2512282.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.signup_img{
+    width: 50%;
+    min-height: 570px;
+    background-image: url('../img/pexels-photo-6479573.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.log_card{
+    width: 50vw;
+    min-height: 570px;
+    background-color: #FED9D1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.signIn, .signUp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formUser{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.btnRed{
+    margin-top: 8px;
+    text-align: center;
+    padding: 8px 16px;
+    border-radius: 50px;
+    background-color: #E85353;
+    color: #FED9D1;
+    border: solid 1px transparent;
+    transition: all 0.2s ease-out;
+
+}
+.btnRed:hover{
+    background-color: transparent;
+    color: #E85353;
+    border: solid 1px #E85353;
+
+}
+.separator{
+    width: 60%;
+    height: 4px;
+    background-color: #F2F6F7;
+    border-radius: 50px;
+    margin: 24px 0;
+}
+.formControl{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 8px;
+    width: 100%;
+    
+}
+input[type="text"],input[type="mail"],input[type="password"]{
+    font-size: inherit;
+    margin-top: 8px;
+    border: inherit;
+    background-color: transparent;
+    height: 24px;
+    border-bottom: #E85353 solid 1px;
+    color: #E85353;
+    width: 100%;
+
+}
+input:focus{
+    outline: none;
+}
+input[type="submit"]{
+    appearance: none;
+    align-items: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    height: 34px;
+    font-size: inherit;
+    font-family: inherit;
+    font: inherit;
+
+}
+input:-internal-autofill-selected {
+    appearance: none ;
+    background-color: transparent !important;
+    background-image: none !important;
+    color: -internal-light-dark(#E85353) !important;
+}
+/* SIIIIIIIIIIIIGNNN UUUUUUUUUUUUUP.php */
+/* #signUp{
+    background-image: url('../img/pexels-photo-6479573.jpeg');
+    background-position: 40% 40%;
+} */
+input[type=file]::-webkit-file-upload-button{
+    padding: 8px 16px;
+    height: 34px;
+    border: solid 1px transparent;
+    border-radius: 50px;
+    background-color: #E85353;
+    color: #FED9D1;
+    text-align: center !important;
+    align-items: center;
+    cursor: pointer;
+    margin: 8px 8px 8px 0;
+    font-family: Poppins, sans-serif;
+    font-size: inherit;
+    transition: all 0.2s ease-out ;
+    
+  }input[type=file]::-webkit-file-upload-button:hover{
+    background-color: transparent;
+    color: #E85353;
+    border: solid 1px #E85353;
+    
+  }
+  input[type=file]::-webkit-file-upload-button:focus{
+    outline: none;
+    
+  }
+  .browse:focus{
+    outline: none;
+    border-bottom: none !important;
+    font-size: 16px;
+
+  }
+  /* Quand l'affichage de l'écran mesure moins de 768 px : format tablette & mobile */
+@media screen and (max-width:768px){
+    .hamburger{
+        z-index: 900;
+        position: absolute;
+        right: 5%;
+        top: 30%;
+        cursor: pointer;
+    }
+    nav{ 
+        position: relative; 
+        display:block; 
+    }
+    .nav-links{
+        z-index: 500; 
+        padding-bottom: 2vh; 
+        padding-top: 5vh;
+        height: 100vh;
+        width: 100vw; 
+        background-color: black;
+        flex-direction: column; 
+        clip-path: circle(50px at 90% -10%); 
+        -webkit-clip-path: circle(50px at 90% -10%); 
+        transition: all 1s ease-out; 
+    }
+    .contenu {
+        width: 100%;
+        flex-direction: column;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .nav-links.open{
+        clip-path: circle(2000px at 90% -10%); 
+        -webkit-clip-path: circle(2000px at 90% -10%);
+    }
+    li.fade{
+        opacity: 1; 
+    }
+    .toggle #line1{
+        transform: rotate(-45deg) translate(-5px,6.5px);
+    }
+    .toggle #line2{
+        opacity: 0; 
+    }
+    .toggle #line3{
+        transform: rotate(45deg) translate(-5px,-6.5px);
+    }
+    .logo a{
+        font-size: 16px;
+    }
+    .line{
+        width: 30px;
+        height: 3px;
+        margin: 5px;
+        background-color: #FED9D1;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+    }
+    .logo{
+        z-index: 900;
+        position: absolute;
+        left: 5%;
+        top:50%;
+        transform: translate(-5%, -50%);
+    }
+    
+   
+    
+    .nav-links li a{
+        font-size: 16px;
+    }
+    .nav-links :nth-child(1){
+        transition : all 0.5s ease 0.1s;
+    }
+    .nav-links :nth-child(2){
+        transition : all 0.5s ease 0.2s;
+    }
+    .nav-links :nth-child(3){
+        transition : all 0.5s ease 0.3s;
+    }
+    .nav-links :nth-child(4){
+        transition : all 0.5s ease 0.4s;
+    }
+    .nav-links :nth-child(5){
+        transition : all 0.5s ease 0.5s;
+    }
+    .nav-links :nth-child(6){
+        transition : all 0.5s ease 0.6s;
+    }
+    
+    main {
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .macard{
+        margin-top: 18px;
+    }
+    
+    .macard{
+        width: 60%;
+    }
+    .sliderSlick{
+        height: 150px;
+    }
+    .log{
+        justify-content: center;
+    }
+    .log_img {
+        display: none;
+    }
+    .signup_img{
+        display: none;
+    }
+    .log_card{
+        width: 75%;
+        border-radius: 50px;
+    }
+}
+@media screen and (max-width:576px){
+    .log_card{
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0px;
+    }
+    .separator{
+        width: 90vw;
+    }
+    .macard{
+        width: 300px;
+        height: 200px;
+        margin: 16px 0;
+    }
+    .contenu{
+        padding: 8px 0;
+    }
+    .inner{
+        height: 150px;
+    }
+    .macard-body{
+        padding: 16px 4px; 
+        height: 150px;   
+    }
+    .sliderElement img{
+        width: 100%;
+        height: 150px;
+        /* object-fit: fill; */
+    }
+    
+}
